@@ -21,7 +21,6 @@
 ]==]
 
 local UnitEntry = 60000
-local UnitEntry = 60001
 
 local T = {
 	[1] = { "Horde Cities", 1,

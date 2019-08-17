@@ -1,4 +1,4 @@
-local NPC_ID = 60004
+local NPC_ID = 60002
 
 local function OnGossipHello(event, player, object)
     player:GossipClearMenu() -- required for player gossip
