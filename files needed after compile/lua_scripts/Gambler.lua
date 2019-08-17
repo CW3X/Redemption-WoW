@@ -1,4 +1,4 @@
-local NPC_ID = 60003
+local NPC_ID = 60005
 local TOKEN_ID = 46691
  
 function Gambler_Gossip(event, plr, unit)

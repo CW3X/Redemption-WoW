@@ -25,6 +25,7 @@ Item link icon to Are You sure text
 ]]
 
 local NPC_Entry = 60002
+local NPC_Entry = 60003
 
 local RequireGold = 1
 local GoldModifier = 1.0
