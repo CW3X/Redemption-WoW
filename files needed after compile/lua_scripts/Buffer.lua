@@ -1,7 +1,7 @@
 local NPC_ID = 60002
 
 local function OnGossipHello(event, player, object)
-    player:GossipClearMenu() -- required for player gossip
+ --   player:GossipClearMenu() -- required for player gossip
 	player:GossipMenuAddItem(0, "Buff Me", 1, 1)
 	player:GossipMenuAddItem(0, "Heal Me", 1, 2)
 	player:GossipMenuAddItem(0, "Remove Sickness", 1, 3)
@@ -14,6 +14,7 @@ if (intid == 1) then
 	player:CastSpell(player, 48073, true)
 	player:CastSpell(player, 48161, true)
 	player:CastSpell(player, 56525, true)
+	player:SendBroadcastMessage("You have been buffed!") 
 elseif (intid == 2) then
 	player:CastSpell(player, 69693, true)
 elseif (intid == 3) then
@@ -21,6 +22,7 @@ elseif (intid == 3) then
        player:RemoveAura(15007)
 	 end
   end
+  player:GossipComplete()
 end
 
 RegisterCreatureGossipEvent(NPC_ID, 1, OnGossipHello)
