@@ -1,5 +1,5 @@
 local T = {
-{1, 15, 15}, -- Private/Scout
+{1, 15, 5}, -- Private/Scout
 {2, 16, 2000}, -- Corporal/Grunt
 {3, 17, 5000}, -- Sergeant
 {4, 18, 10000}, -- Master/Senior Sergeant
